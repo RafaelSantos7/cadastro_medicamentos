@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Medicamentos</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <!-- link css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+       <ul>
+        <li class="home">Home</li>
+        <li>Cadastro <br> de Medicamentos</li>
+        <li>Cadastro <br> de Vacinas</li>
+        <li>Cadastro <br> de Cosméticos</li>
+       </ul>
+    </header>
+
+    <section class="cadMed">
+        <img class="logo" src="./img/logo.png" alt="Logo Medicamentos">
+
+        <div class="title">
+            <h1>Cadastro de Medicamentos</h1>
+            <h2>Farmácia da Gente</h2>
+        </div>
+    </section>
+
+    <section class="secForm">
+        <div>
+            <form onsubmit="addMed()">
+                <label for="medName">Nome do Medicamento</label>
+                <input autocomplete="off" type="text" required id="fname" name="medName" placeholder="Bonpragrip">
+    
+                <label for="medQtd">Quantidade Disponível</label>
+                <input autocomplete="off" type="text" required id="fqtd" name="medQtd" placeholder="100">
+    
+                <label for="metClass">Classe de Medicamento</label>
+                <input style="margin-bottom: 1rem;" autocomplete="off" type="text" required id="fclass" name="metClass" placeholder="Antibiótico">
+    
+                <button class="submit-button" type="submit"> Cadastrar </button>
+            </form>
+        </div>
+
+        <div>
+            <table id="dataTable">
+                <tr>
+                    <th>ID</th>
+                    <th>Medicamento</th>
+                    <th>Quantidade</th>
+                    <th>Classe de Medicamento</th>
+                    <th>Remover</th>
+
+                </tr>
+                <!-- <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr> -->
+            </table>
+        </div>
+    </section>
+
+    <!-- link js -->
+    <script src="./script.js"></script>
+</body>
+</html>
